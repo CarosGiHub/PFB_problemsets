@@ -1,0 +1,207 @@
+    1  cd /bin/\nls
+    2  ls
+    3  cd /bin/\nls
+    4                          ls -lt | head
+    5  cd ~\n\ncurl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt
+    6  ls -lt | head
+    7  ls
+    8  ls -1
+    9  ls -l
+   10  ls -lt
+   11  cd /bin/\nls
+   12  ls -l\nls -lt
+   13  ls -lt | head
+   14  man sleep
+   15  ls -lt | head
+   16  date ; sleep 2 ; date
+   17  ls -lt | head
+   18  cd ~
+   19  curl -0 cd ~cd ~\n\ncurl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt
+   20  ~
+   21  curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt
+   22  ~
+   23  cd ~
+   24  pwd
+   25  cd ..
+   26  pwd
+   27  ls
+   28  man
+   29  man ls
+   30  mkdir PFB_problemsets
+   31  ~
+   32  cd ~
+   33  mkdir PFB_problemsets
+   34  ls
+   35  cd PFB_problemsets
+   36  pwd
+   37  curl -O
+   38  curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/sequences.nt.fa 
+   39  wc sequences.nt.fa
+   40  wc sequences.nt.fa
+   41  wc -l sequences.nt.fa
+   42  wc -w sequences.nt.fa
+   43  wc -m sequences.nt.fa
+   44  head -n 1 sequences.nt.fa
+   45  tail -n 3 sequences.nt.fa
+   46  grep ">" sequences.nt.fa
+   47  echo "# PFB_problemsets" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:CarosGiHub/PFB_problemsets.git\ngit push -u origin main
+   48  git config --global --edit
+   49  git commit --amend --reset-author
+   50      git config --global user.name "Your Name"
+   51      git config --global user.name "CarosGiHub"
+   52  git config --global user.email carolineharrer@gmx.de
+   53  git commit --amend --reset-author
+   54  pwd
+   55  echo "# PFB_problemsets" >> README.md
+   56  git init
+   57  git add README.md
+   58  git commit -m "first commit"
+   59  git branch -M main
+   60  git remote add origin git@github.com:CarosGiHub/PFB_problemsets.git
+   61  git push -u origin main
+   62   git status
+   63  git log --oneline
+   64  ls
+   65  cd ..
+   66  mv PFB_problemsets PFB_problemsets_broken
+   67  mkdir PFB_problemsets
+   68  cd PFB_problemsets
+   69  git init
+   70  git branch -M main
+   71  git remote add origin git@github.com:CarosGiHub/PFB_problemsets.git
+   72  git pull origin main
+   73  echo "# PFB_problemsets" >>README.md
+   74  git add README.md
+   75  git commit -m 'first commit'
+   76  git push -u origin main
+   77  mv ../PFB_problemsets_broken/* .
+   78  rm -rf ../PFB_problemsets_broken
+   79  git status
+   80  git diff README.md
+   81  git add README.md
+   82  git checkout README.md
+   83  git status
+   84  git restore --staged README.md
+   85  git status
+   86  git checkout README.md
+   87  git status
+   88  git add .
+   89  git status
+   90  git commit -m "AddedFile"
+   91  git status
+   92  git push
+   93  cd ~/PFB_problemsets/.git/hooks/\ncurl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/setup/pre-commit
+   94  sequences.nt.fa > cancer_genes.fasta
+   95  mv -f sequences.nt.fa cancer_genes.fasta
+   96  ls
+   97  cd PFB_problemsets
+   98  cd
+   99  ls
+  100  cd PFB_problemsets
+  101  ls
+  102  mv sequences.nt.fa cancer_genes.fasta
+  103  curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/files/cuffdiff.txt 
+  104  head cuffdiff
+  105  head cuffdiff.txt
+  106  sort-k 10 cuffdiff.txt > sorted.cuffdiff.out
+  107  sort -k 10 cuffdiff.txt > sorted.cuffdiff.out
+  108  head head -n 100 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+  109  head -n 100 sorted.cuffdiff.out > top100.sorted.cuffdiff
+  110  ls
+  111   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail 100 | > differentially.expressed.genes.txt
+  112   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -n 100 | > differentially.expressed.genes.txt
+  113   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -f 100 | > differentially.expressed.genes.txt
+  114   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -n 100 | > differentially.expressed.genes.txt
+  115   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -n 100 |sort -k1 > differentially.expressed.genes.txt
+  116   sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -n 100 |sort -k1 > differentially.expressed.genes.txt
+  117  sort -k 10 cuffdiff.txt | cut -f  1, 10 |tail -n 100 |sort -k 1 > differentially.expressed.genes.txt
+  118  ls
+  119  cat differentially.expressed.genes.txt
+  120  mv Unix_01 Problem PFB_problemsets
+  121  cd PFB_problemsets
+  122  cd User/pfb/PFB_problemset
+  123  cd
+  124  pwd
+  125  cd /Users/pfb/PFB_problemsets
+  126  ls
+  127  mkdir /Users/pfb/PFB_problemsets/files
+  128  ls
+  129  mv cancer_genes.fasta files
+  130  git add files/cancer_genes.fasta
+  131  git commit -m 'adding cancer_genes.fasta'
+  132  git push
+  133  vi
+  134  vi mysequences.txt
+  135  vi mysequences.txt
+  136  git status
+  137  git add .
+  138  git commit -m "added files problemset2"
+  139  git push
+  140  mkdir /User/PFB/PFB_problemsets/fastas
+  141  cd /User/PFB/PFB_problemsets
+  142  mkdir /User/pfb/PFB_problemsets/fastas
+  143  cd /User/pfb/PFB_problemsets
+  144  mkdir /User/pfb/PFB_problemsets/fastas
+  145  mkdir fastas
+  146  cancer_genes.fasta > fastas
+  147  mv cancer_genes.fasta fastas
+  148  mv cancer_genes.fasta /fastas 
+  149  cd /User/pfb/PFB/problemsets
+  150  cd /User/pfb/PFB/problemsets/files
+  151  ls
+  152  ls -F
+  153  mv cancer_genes.fasta fastas/ 
+  154  mv files/cancer_genes.fasta fastas
+  155  ls
+  156  cd fastas
+  157  ls
+  158  cd ../
+  159  find cancer
+  160  find 'cancer'
+  161  cd files
+  162  find cancer
+  163  find 'cancer'
+  164  cd ..
+  165  cd files
+  166  find cancer
+  167  find 'cancer'
+  168  cd /User/pfb/PFB/problemsets/fastas
+  169  cd ..
+  170  ls
+  171  cd fastas
+  172  ls
+  173  rm cancer_genes.fasta
+  174  ls
+  175  git status
+  176  git add .
+  177  git commit -m "deletion"
+  178  git push
+  179  git status
+  180  git add .
+  181  git status
+  182  cd ..
+  183  git add .
+  184  git status
+  185  git push
+  186  git commit -m  "deleted"
+  187  git push
+  188  vi oops
+  189  git rm oops
+  190  ls
+  191  vi oops
+  192  git add oops
+  193  git commit -m "adding oops"
+  194  git status
+  195  git push
+  196  git rm oops
+  197  git commit -m 'removing oops'
+  198  git push
+  199  vi never
+  200  git add never
+  201  git status
+  202  git reset never
+  203  git status
+  204  apropos history
+  205  history 
+  206  history 100 
+  207  history 1
