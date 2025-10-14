@@ -118,13 +118,15 @@ else:
 
 #if you need to push document from local repository to digital one you need to run git push
 #for this 
-#a) run 
+#a) run in the command line:
 #git status (gives you information about the status - is there a document that is not synced yet - depicted in red)
 #git add python2.py(the document you would like to add)
 #git commit -m "writewhatthecommitdoes" (no parethesis needed around "writewhatthecommitdoes")
 #if it shows the following that is fine you can ignore it: "hint: The '.git/hooks/pre-commit' hook was ignored because it's not set as executable.
 #hint: You can disable this warning with `git config set advice.ignoredHook false`"
 #git push
+#type in assigned password key
+#synch GitHub online and check if the document was synced
 #git status (check if there is not document left that is unassigned. every unassigned document is shown in red)
 
 #Important short cuts
@@ -132,3 +134,4 @@ else:
 # command + /: makes text in #green
 #tab - adds directories or assigned variables
 #arrow up - helps to find previous commands
+
