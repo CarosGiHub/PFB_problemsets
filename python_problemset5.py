@@ -75,8 +75,37 @@ print(fav_dict)
 
 #this time use a third item in the command line that should replace the value
 
-mySet = set('ATGTGGG')
-mySet2 = {'ATGTGGG'}
+# Sets Question1: 
+# mySet = set('ATGTGGG')
+# mySet2 = {'ATGTGGG'}
 
-print(mySet)
-print(mySet2)
+# print(mySet)
+# print(mySet2)
+# print(type(mySet2))
+
+# the difference is that the setfunction set() does remove duplicates from the sequence. The print out is {'G', 'T', 'A'}
+# mySet2 is a set that contains one "string"/"variable". {'ATGTGGG'} you can test the class by using print(type(mySet2))<class 'set'>
+
+# Dictionaries, Sets and File I/O Question 1
+# Unique character in the sequence
+
+dna = "GAACTCCAAAAATGAAAACATAGTAGCAATCAAAGCATCCCACTATTTTTTGTCTCTCGTTTCATTAGCGTTGTAAATTACTGATACCCTACTATACCTCTACAAGGCCTTTGTCATCTTTTTACTCAAGTGTGAAATCATCACTTATTGTATGAAGGATGAGCTTTCCGTTCGCTAGTTTGCTGAAAAGGCCTTCTGCAATAAGCTCTCTATTATCTTTAAAAAAACCTGGTTCCTGGTCTTCCATTCTGCTAAAAGCTGTAGGGGTTTTATCACGAGATTCCCGTTGGCATTCTGACTTATTAAAAATGCTTACAGAAGAAATGGATTCTTTAAATGGTCAAATTAATACGTGGACAGATAATAATCCTTTATTAGATGAAATTACGAAGCCATACAGAAAATCTTCAACTCGTTTTTTTCATCCGCTTCTTGTACTTCTAATGTCTAGAGCATCAGTAAATGGGGATCCACCGAGTCAGCAACTATTTCAAAGGTACAAACAACTTGCCCGTGTAACAGAATTGATTCATGCTGCCAATATAATTCATATTAATATTGGAGAAGAACAAAGCAACGAACAGATTAAACTTGCAACGTTGGTTGGAGATTATTTACTCGGAAAGGCGTCTGTTGATTTAGCACATTTAGAAAACAACGCTATTACAGAAATTATGGCTTCTGTTATTGCAAACTTAGTTGAAGGGCACTTCGGAAGCCGACAAAATGGCTCTGTTGGTTTGTCAAACGAACGAACCATCCTTCTGCAATCAGCCTTTATGCCAGCAAAGGCATGTTTATGCGCAAGCATATTGAATAACTCATCACAATACATTAATGATGCGTGTTTCAATTATGGAAAATTTCTAGGCTTATCGCTGCAACTGGCCCATAAGCCTGTATCTCCTGACGCCCAAGTTTTGCAAAAGAATAATGACATTTTGAAAACATATGTTGAGAATGCCAAGAGCTCATTGTCTGTTTTCCCCGATATAGAGGCTAAGCAAGCTCTCATGGAAATCGCTAATAGTGTTTCGAAGTAATCGACAGGTATTGTATCCTGGATTAATATTAGGGTGGCTCATGCATGCTCGTGCAATCGTAACAAATATGTCTTTCTTTTACGAATTTTAACGCTTCAATATAAATCATATTTTTCCTCA"
+
+#create new empty dictionary 
+nt_count = {}
+unique = set(dna)
+
+print("unique nt: " , unique) # uses set() to remove duplicates and display just the unique nucleotides - here "A", "T", "C", "G" 
+#print results in {"C" , "A" , "G" , "T"}
+
+#create for loop to iterate through and add count per nt detected
+for nt in unique:
+    count = dna.count(nt) #add the result to the empty dictionary nt_count = {}
+    nt_count[nt] = count
+print("nt count:" , nt_count)
+
+GC_count = nt_count['G'] + nt_count['C'] #retrieve count from dictionary, G. C . A. D are keys retrieve values with keys
+Total_count = nt_count['G'] + nt_count['C'] + nt_count['T'] + nt_count['A']
+print((GC_count/Total_count)*100)
+
+#finished here at 10/16/2025 => rest still needs to be done
