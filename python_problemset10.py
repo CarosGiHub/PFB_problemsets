@@ -52,4 +52,6 @@ def reformated_dna_sequence(dna):
     
 print (reformated_dna_sequence(dna))
 
-# in this example - 
+# in this example - the \n will be removed by using rstrip(), which removes \n on the right hand side
+# the difference here is to make sure that you iterate through all lines, as different from question 1, 
+# where we iterated through the characters with range 
