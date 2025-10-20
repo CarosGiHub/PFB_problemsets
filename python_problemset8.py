@@ -48,7 +48,7 @@
 
 
 
-#Question 1:
+#Question 1: Right solution
 
 import re
 
@@ -64,15 +64,15 @@ with open("Python_08.fasta.txt", "r") as seq_file:
             gene_id = gene_id.lstrip(">")
             nt_count = {"A" : 0 , "C" : 0, "T" : 0 , "G": 0} #create a new list that stores the count for each nucleotide
             #for this I need to first define all characters that are unique in the sequence using the set function 
-            fasta_dict[gene_id] = nt_count
+            fasta_dict[gene_id] = nt_count #dictionary has to go here, if its in the else statement, it would just show the last line
             
         else:
             #print(line)
             # fasta_dict[gene_id] += line #adding value to key
-            unique = set(line)
+            unique = set(line) #it is not necessary to have it when we know what the nucleotides are, although you still need to 
             print ("unique nt: ", unique)
             for nt in unique:
                 count = line.count(nt)
-                nt_count[nt] += count
+                nt_count[nt] += count #it has to =+ to cummulate
     print(fasta_dict)
-    print(nt_count)
+    print(nt_count) #could be a control
