@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+
+
+
+field_names = ("qseqid", "sseqid", "percid", "alen", "mismat", "gaps", "q_start", "q_end", "s_start", "s_end", "evalue", "bits")
+
+def blast_analysis():
+    with open ("", "r") as blast_filename:
+        for line in blast_filename:
+            line = line.rstrip()
+            if line.startswith("#")
+                next(line)
+            else 
+            break
+    this_data = dict(zip(field_names, line.split ("/t")))
+    return this_data
+
+print(blast_analysis())
+
+        #scoring_matrix = {}
+        #scoring_matrix[]
+
+
+
+
+def main():
+
+    progname = sys.argv[0]
+    blast_filename = sys.argv[1]
+    scoring_matrix = int(sys.argv[2])
+
+    print("")
+
+
+if __name__ == '__main__':
+    main()
+    
